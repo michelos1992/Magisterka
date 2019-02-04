@@ -1,0 +1,18 @@
+﻿<Window x:Class="MAGI_PROJECT_KINECT.Robots"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MAGI_PROJECT_KINECT"
+        mc:Ignorable="d"
+        Title="Robots" Height="300" Width="300" >
+    <Grid>
+        <Control KeyboardNavigation.TabIndex="0" KeyDown="Control_KeyDown" />
+        <Button x:Name="Connect" Content="Connect" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Connect_Click"/>
+        <Button x:Name="Disconnect" Content="Disconnect" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="75" Click="Disconnect_Click"/>
+        <Button x:Name="BatteryLive" Content="Battery live" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="75" Click="BatteryLive_Click"/>
+        <Button x:Name="BackToMain" Content="Back To Main Window" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="128" Click="BackToMain_Click"/>
+        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Margin="47,155,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

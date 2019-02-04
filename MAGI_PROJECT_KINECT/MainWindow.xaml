@@ -1,0 +1,34 @@
+﻿<Window x:Class="MAGI_PROJECT_KINECT.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MAGI_PROJECT_KINECT"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="768" Width="1366" >
+
+    <Grid Name="layoutGrid" Margin="10 0 10 0">
+        <TextBox x:Name="textBox1" Height="47" TextWrapping="Wrap" Text="TextBox1" VerticalAlignment="Top" Width="120" Margin="130,10,1088,0"/>
+        <TextBox x:Name="textBox2" Height="47" TextWrapping="Wrap" Text="TextBox2" VerticalAlignment="Top" Width="120" Margin="255,10,963,0"/>
+        <TextBox x:Name="textBox3" Height="47" TextWrapping="Wrap" Text="TextBox3" VerticalAlignment="Top" Width="128" Margin="380,10,830,0"/>
+        <TextBox x:Name="distanceTextBox" Height="47" Margin="5,10,1213,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AnswerFromRobot" Height="27" TextWrapping="Wrap" Text="TextBox1" VerticalAlignment="Top" Margin="-3,93,1213,0"/>
+
+        <Image Name ="MaskedColor" UseLayoutRounding="True" Margin="402,93,386,219" MouseLeftButtonDown="Window_MouseLeftButtonDown" MouseLeftButtonUp="Window_MouseLeftButtonUp" />
+        <Button x:Name="proba" Content="ScanEmpty" HorizontalAlignment="Left" Margin="-3,313,0,0" VerticalAlignment="Top" Width="128" Height="42" Click="SpaceScanEmpty_Click" />
+        <Button x:Name="Calibration" Content="Calibration" HorizontalAlignment="Left" Margin="-3,266,0,0" VerticalAlignment="Top" Width="128" Height="42" Click="Calibration_Click" />
+        <Button x:Name="CheckedButton" Content="Check" HorizontalAlignment="Left" Margin="130,266,0,0" VerticalAlignment="Top" Width="128" Height="42" Click="CheckedButton_Click" />
+        <Button x:Name="proba_Copy" Content="ScanFully" HorizontalAlignment="Left" Margin="130,313,0,0" VerticalAlignment="Top" Width="128" Height="42" Click="SpaceScanFully_Click" />
+        <Button x:Name="ConnectToRobot" Content="Connect robot" HorizontalAlignment="Left" Margin="529,10,0,0" VerticalAlignment="Top" Width="76" Click="ConnectToRobot_Click"/>
+        <Button x:Name="ColorCamera" Content="Color Camera Window-View" HorizontalAlignment="Left" Margin="529,35,0,0" VerticalAlignment="Top" Width="157" Click="ColorCamera_Click" />
+        <Button x:Name="ConnectRobot" Content="ConnectWithRobot" HorizontalAlignment="Left" Margin="-3,219,0,0" VerticalAlignment="Top" Width="128" Height="42" Click="ConnectRobot_Click" />
+        <Button x:Name="Gogo" Content="Gogogo" HorizontalAlignment="Left" Margin="-3,172,0,0" VerticalAlignment="Top" Width="128" Height="42" Click="Gogo_Click"  />
+        <Button x:Name="Disconnect" Content="Disconnect" HorizontalAlignment="Left" Margin="130,219,0,0" VerticalAlignment="Top" Width="128" Height="42" Click="Disconnect_Click"  />
+        <Button x:Name="STOP" Content="STOP" HorizontalAlignment="Left" Margin="130,172,0,0" VerticalAlignment="Top" Width="128" Height="42" Click="STOP_Click"  />
+
+        <Label Content="Odpowiedz od robota" HorizontalAlignment="Left" Margin="-3,67,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Content="sprawdzone roznice" HorizontalAlignment="Left" Margin="516,55,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label Content="--wpisz ilosc km" HorizontalAlignment="Left" Margin="130,94,0,0" VerticalAlignment="Top" Width="128"/>
+
+    </Grid>
+</Window>
